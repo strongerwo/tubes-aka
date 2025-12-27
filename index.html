@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pencarian Barang Toserba</title>
+  <link rel="stylesheet" href="/statics/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Pencarian Barang Toserba</h1>
+
+    <div class="input-group">
+      <label for="size">Ukuran Data (N)</label>
+      <input id="size" type="number" placeholder="Contoh: 10000" />
+    </div>
+
+    <div class="input-group">
+      <label for="code">Kode Barang</label>
+      <input id="code" type="text" placeholder="Contoh: B000001" />
+    </div>
+
+    <button id="searchButton">Cari</button>
+
+    <div class="result-box">
+      <h3>Hasil Pencarian</h3>
+      <p id="foundOut">Belum ada pencarian.</p>
+    </div>
+
+    <h3>Waktu Eksekusi</h3>
+    <div id="seqTime">Waktu Pencarian Sequential Iteratif: -</div>
+    <div id="ternTime">Waktu Pencarian Sequential Rekursif: -</div>
+
+    <h3>Diagram Waktu Eksekusi Berdasarkan Ukuran N</h3>
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <script src="/statics/script.js"></script>
+</body>
+</html>

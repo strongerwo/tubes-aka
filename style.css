@@ -1,0 +1,123 @@
+:root {
+  --bg: #fff6f8;
+  --panel: #ffffff;
+  --card: #fff0f4;
+  --border: #f2c9d6;
+
+  --title: #b23a63;
+  --text: #2f2a2c;
+  --muted: #6d5b63;
+
+  --btn: #e07a9b;
+  --btn-hover: #d46b8c;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: var(--text);
+}
+
+.container {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 28px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+h1 {
+  margin: 0 0 24px;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--title);
+}
+
+h3 {
+  margin: 24px 0 12px;
+  font-size: 20px;
+  color: var(--title);
+}
+
+.input-group { margin-bottom: 16px; }
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+input[type="number"], input[type="text"]{
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+  font-size: 15px;
+  color: var(--text);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--title);
+}
+
+button {
+  display: block;
+  margin: 20px auto 10px;
+  padding: 10px 30px;
+  border-radius: 999px;
+  border: none;
+  background: var(--btn);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover { background: var(--btn-hover); }
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.result-box {
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 10px;
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+.result-box p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+#seqTime, #ternTime {
+  margin: 10px 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid var(--border);
+  font-size: 14px;
+  color: var(--muted);
+}
+
+canvas#myChart {
+  margin-top: 14px;
+  width: 100% !important;
+  max-height: 360px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 700px) {
+  .container { margin: 16px; padding: 20px; }
+  h1 { font-size: 30px; }
+}
